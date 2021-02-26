@@ -64,7 +64,7 @@ const handleUpdate = (song) => {
     headers: { "Content-Type": "application/json" }, body: JSON.stringify(song)}).then(() => {getSongs()})
 }
 const deleteSong = (song) => {
-  fetch (url + "/songs/" + song._id, {method: "delete"}).then(() => {getSongs()})
+  fetch (url + "/songs/" + song.id, {method: "delete"}).then(() => {getSongs()})
 }
   const selectSong = (song) => {
     setSelectedSong(song);
