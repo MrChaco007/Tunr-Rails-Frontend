@@ -20,18 +20,21 @@ const Form = (props) => {
       <input
         type="text"
         name="title"
+        placeholder="Song"
         value={formData.title}
         onChange={handleChange}
       />
       <input
         type="text"
         name="artist"
+        placeholder="Artist"
         value={formData.artist}
         onChange={handleChange}
       />
       <input
         type="text"
         name="time"
+        placeholder="Length"
         value={formData.time}
         onChange={handleChange}
       />
