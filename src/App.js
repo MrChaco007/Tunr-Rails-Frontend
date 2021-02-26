@@ -7,7 +7,7 @@ import Form from "./Form";
 
 function App() {
 
-  const url = "https://tunr-back-end.herokuapp.com"
+  const url = "http://localhost:3000"
   const [songs, setSongs] = React.useState([]);
   const emptySong = {
     title: "",
@@ -22,7 +22,6 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setSongs(data);
-        console.log(data)
       });
   };
 
