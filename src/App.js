@@ -60,7 +60,7 @@ function App() {
     });
   };
 const handleUpdate = (song) => {
-  fetch(url + "/songs/updateSong/" + song._id, {
+  fetch(url + "/songs/" + song.id, {
     method: "put",
     headers: { "Content-Type": "application/json" }, body: JSON.stringify(song)}).then(() => {getSongs()})
 }
